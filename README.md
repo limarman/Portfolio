@@ -41,6 +41,7 @@ Further, the algorithm shows a high degree of safety even in unseen (out-of-dist
 <div style="text-align: center;">
   <img src="img/cheq-transfer-results.png" alt="Alt text for image" style="max-width: 550px; height: auto;"/>
 </div>
+
 A paper summarizing the methodology and results has been accepted and presented at the Reinforcement Learning Conference (RLC) 2024 in Amherst, MA, USA. You can find the paper on [arXiv](https://arxiv.org/abs/2406.19768).
 
 ---
