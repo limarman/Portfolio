@@ -35,11 +35,11 @@ This challenge demanded me to keep a mindful balance between progress and order.
 ### Results
 Our approach of uncertainty-based adaption between RL agent and control prior (CHEQ) showed to drastically increase the training speed and training safety compared to competitor approaches, decreasing the amount training failures compared to its downstream vanilla RL algorithm (Soft Actor-Critic) by 97.5%.
 <div style="text-align: center;">
-  <img src="img/cheq-training-results.png" alt="Alt text for image" style="max-width: 450px; height: auto;"/>
+  <img src="img/cheq-training-results.png" alt="Alt text for image" style="max-width: 100px; height: auto;"/>
 </div>
 Further, the algorithm shows a high degree of safety even in unseen (out-of-distribution) situations, by recognizing its uncertainty and handing over the control to the safe control prior.
 <div style="text-align: center;">
-  <img src="img/cheq-transfer-results.png" alt="Alt text for image" style="max-width: 450px; height: auto;"/>
+  <img src="img/cheq-transfer-results.png" alt="Alt text for image" style="max-width: 100px; height: auto;"/>
 </div>
 
 A paper summarizing the methodology and results has been accepted and presented at the Reinforcement Learning Conference (RLC) 2024 in Amherst, MA, USA. You can find the paper on [arXiv](https://arxiv.org/abs/2406.19768).
