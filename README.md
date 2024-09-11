@@ -33,7 +33,7 @@ Although we had a rough idea in mind where we would like the project to go, ther
 This challenge demanded me to keep a mindful balance between progress and order. I also had to grow a thicker fur, becoming less attached to code I have written and more emotionally indifferent to changes that have to be made.
 
 ### Results
-Our approach of uncertainty-based adaption between RL agent and control prior (CHEQ) showed to drastically increase the training speed and training safety compared to competitor approaches, decreasing the amount training failures compared to its downstream vanilla RL algorithm (Soft Actor-Critic) by 97.5%.
+Our approach of uncertainty-based adaption between RL agent and control prior (CHEQ) showed to drastically increase the training speed and training safety compared to competitor approaches on a car-racing environment, decreasing the amount training failures compared to its downstream vanilla RL algorithm (Soft Actor-Critic) by 97.5%.
 ![Training results for CHEQ](img/cheq-training-results.png)
 Further, the algorithm shows a high degree of safety even in unseen (out-of-distribution) situations, by recognizing its uncertainty and handing over the control to the safe control prior.
 ![Transfer results for CHEQ](img/cheq-transfer-results.png)
@@ -44,7 +44,7 @@ A paper summarizing the methodology and results has been accepted and presented 
 - **GitHub**: https://github.com/limarman/Mensch-Aergere-Dich-Nicht
 - **Techstack**: C++, Slurm, (Website: HTML, CSS, Javascript)
 ### Project Overview
-[Mensch Ärgere Dich Nicht](https://en.wikipedia.org/wiki/Mensch_%C3%A4rgere_Dich_nicht)(MadN) is a famous German board game. This project aimed to compute the (Nash-)optimal playing strategy and the corresponding winning probabilities for every possible position of the 2-player variant of the game through a brute-force value iteration algorithm. This project was part of my Bachelor's Thesis during the summer term 2019 and was supervised by Prof. Peter Rossmanith and Dr. Henri Lotze.
+[Mensch Ärgere Dich Nicht](https://en.wikipedia.org/wiki/Mensch_%C3%A4rgere_Dich_nicht) (MadN) is a famous German board game. This project aimed to compute the (Nash-)optimal playing strategy and the corresponding winning probabilities for every possible position of the 2-player variant of the game through a brute-force value iteration algorithm. This project was part of my Bachelor's Thesis during the summer term 2019 and was supervised by Prof. Peter Rossmanith and Dr. Henri Lotze.
 ### Tasks
 On the practical side my tasks were:
 - Implementing the game logic following the rule set specification
