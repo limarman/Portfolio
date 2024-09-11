@@ -30,11 +30,16 @@ This challenge required me to intensively review the relevant concepts and mathe
 
 ##### Uncertainty of Research
 Although we had a rough idea in mind where we would like the project to go, there were many uncertainties about the next steps and decisions to take (which I now understand as a typical property of research projects). These uncertainties pose challenges from a software engineering point of view as they require a continuously evolving code base that meets dynamically changing requirements for functionality that are hard to foresee. "Now that I think about it, we should also benchmark against algorithm X, can you include it into the code base?" is a perfect example of such a requirement. Serving the online feature requirements becomes a tradeoff between delivering quick results and maintaining a well-structured code base. Cleaning up the project is "lost" time but neglecting it for too long results in hard-to-understand and error-prone code.
-This challenge demanded me to keep a mindful balance between progress and order. I also had to grow a thicker fur, becoming less attached to code I have implemented and more emotional indifferent to changes that have to be made.
+This challenge demanded me to keep a mindful balance between progress and order. I also had to grow a thicker fur, becoming less attached to code I have written and more emotionally indifferent to changes that have to be made.
 
 ### Results
+Our approach of uncertainty-based adaption between RL agent and control prior (CHEQ) showed to drastically increase the training speed and training safety compared to competitor approaches, decreasing the amount training failures compared to its downstream vanilla RL algorithm (Soft Actor-Critic) by 97.5%.
+<object data="return_vs-SAC-UTD20.pdf" type="application/pdf" style="width: 45%; float: left;"></object>
+<object data="return_vs-SAC-UTD20.pdf" type="application/pdf" style="width: 45%; float: right;"></object>
+Further, the algorithm shows a high degree of safety even in unseen (out-of-distribution) situations, by recognizing its uncertainty and handing over the control to the safe control prior.
 
-- Briefly mention result in words, embed one/two graphics, give link to paper on arxiv
+A paper summarizing the methodology and results has been accepted and presented at the Reinforcement Learning Conference (RLC) 2024 in Amherst, MA, USA. You can find the paper on [arXiv](https://arxiv.org/abs/2406.19768).
+
 ---
 ## Winning Probabilities for Mensch Ärgere Dich Nicht
 
