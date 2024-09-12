@@ -4,7 +4,7 @@ This file gives an overview of (published) projects that I have worked on over t
 - Bachelor Thesis: [Winning Probabilities for Mensch Ärgere Dich Nicht](#winning-probabilities-for-mensch-ärgere-dich-nicht)
 - Student Assistant: [Reinforcement Learning Algorithm Library](#reinforcement-learning-algorithm-library)
 - Practical Course: [Classic AI for Multi-Player Reversi](#classic-ai-for-multi-player-reversi)
-- Practical Course: [Reinforcement Learning AI for Kore22 Kaggle Challenge](#reinforcement-learning-ai-for-kore22-kaggle-challenge)
+
 ---
 ## Uncertainty-based Reinforcement Learning
 - **GitHub**: https://github.com/Data-Science-in-Mechanical-Engineering/cheq
@@ -91,7 +91,7 @@ Here you can see a few excerpts from the DQN notebook:
 ![DQN-notebook-training-explanation](img/DQN-training-explanation.png)
 
 ---
-## Multi-player Reversi AI
+## Classic AI for Multi-player Reversi
 - **GitHub**: https://github.com/limarman/Reversi-SWP
 - **Techstack**: Java, JUnit
 
@@ -117,6 +117,4 @@ Sadly, I could not find a screenshot of the final standings of that tournament. 
 ![Standings-Reversi-AI](img/Reversi-AI-standings-2024.png)
 Phteven (our AI) and The Stig (the all-time-best 2018) are still going at it head-to-head even after 6 years. Looking at the number of disqualifications it looks like both could use an update however.
 
----
-## Kore22 AI
 ---
