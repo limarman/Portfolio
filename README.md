@@ -111,7 +111,7 @@ However, my main responsibility was engineering the AI logic. This included:
 The project's setting was a challenge in itself. In regular time intervals, multiple times during a day, a tournament was hosted that pitted the AIs of all groups against each other. A leaderboard publicly displayed who was the winner and who was the loser at the current time. Furthermore, the all-time-best AI from previous years was also participating in the tournaments, serving as a reminder of the standard to strive for. There was no way we would not aim for the throne during the course, so the challenge became to outsmart the competition by coming up with solutions to calculate faster and evaluate better. This asked for a iterative process of identifying possible weaknesses, thinking of an improvement and testing it during the daily tournaments.
 
 ### Results
-Already early in the course our group emerged as the highest-performing group of the year, without any serious peer-competition. By the end of the course we also began to consistently rank in front of the all-time-best AI. In a large scale final tournament of the year we ranked 1st by a small margin.
+Already early in the course our group emerged as the highest-performing group of the year, without any serious peer-competition. By the end of the course we also began to consistently rank in front of the all-time-best AI. In a large scale final tournament of the year we ranked 1st by a margin of ~10% tournament points.
 
 Sadly, I could not find a screenshot of the final standings of that tournament. Instead I found one from a tournament of this year's (2024) course:
 ![Standings-Reversi-AI](img/Reversi-AI-standings-2024.png)
