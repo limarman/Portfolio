@@ -30,7 +30,7 @@ This challenge required me to intensively review the relevant concepts and mathe
 
 #### Uncertainty of Research
 Although we had a rough idea in mind where we would like the project to go, there were many uncertainties about the next steps and decisions to take (which I now understand as a typical property of research projects). These uncertainties pose challenges from a software engineering point of view as they require a continuously evolving code base that meets dynamically changing requirements for functionality that are hard to foresee. "Now that I think about it, we should also benchmark against algorithm X, can you include it into the code base?" is a perfect example of such a requirement. Serving the online feature requirements becomes a tradeoff between delivering quick results and maintaining a well-structured code base. Cleaning up the project is "lost" time but neglecting it for too long results in hard-to-understand and error-prone code.
-This challenge demanded me to keep a mindful balance between progress and order. I also had to grow a thicker fur, becoming less attached to code I have written and more emotionally indifferent to changes that have to be made.
+This challenge demanded me to keep a mindful balance between progress and order. I also had to grow a thicker fur, becoming less attached to code I have written and develop a emotional resilience to changes that have to be made.
 
 ### Results
 Our approach of uncertainty-based adaption between RL agent and control prior (CHEQ) showed to drastically increase the training speed and training safety compared to competitor approaches on a car-racing environment, decreasing the amount training failures compared to its downstream vanilla RL algorithm (Soft Actor-Critic) by 97.5%.
@@ -52,7 +52,7 @@ On the practical side my tasks were:
 - Scheduling computations on the cluster
 - Evaluating and retrieving insights from the resulting data
 
-Theoretically, I have worked on formalizing the method mathematically and proving its correctness.
+On the theoretic side, I have worked on formalizing the method mathematically and proving its correctness.
 ### Challenges
 The biggest technical challenge was to design a bijective encoding/decoding function to assign each position a unique identifier. It required a certain degree of creativity to come up with the hierarchical encoding/decoding algorithm I used in the end.
 Apart from that, another big challenge was the scale of the problem. The 2-player version of MadN has about 16 billion possible positions (excluding symmetry). Saving one float value for the winning probability for every position results in unwieldy file sizes of >60GB. Further, because of the scale, the computation becomes very time-expensive and does not leave room for failure as a recomputation would exceed the available quota. To deal with this, I followed the strategy of testing the algorithm on (artificial) smaller instances of the game first. Additonally, I implemented a mechanism to periodically backup the interim results in case the computation aborts unexpectedly.
@@ -68,6 +68,28 @@ More details regarding the mathematical foundation, implementation, and results 
 
 ---
 ## RL Algorithm Library
+- **GitHub**: https://github.com/Data-Science-in-Mechanical-Engineering/RLLBC
+- **Techstack**: Python, Conda, Pytorch, Jupyter Notebook, Gymnasium
+### Project Overview
+To improve the quality of teaching the RWTH Aachen University chair for Datascience in Mechanical Engineering hired a team of three student assistants (including me) to develop a comprehensive library of tabular and deep Reinforcement Learning algorithms. The idea was to design the library hierarchically as flat as possible, providing one-file Jupyter notebook implementations with detailed explanations for a selection of common algorithms. Compared to production libraries like StableBaselines3, the one-file implementations allow for a better overview by clearly seperating the algorithms. Thus they should serve as better-suited learning material for students that would like to study RL methods.
+### Tasks
+My tasks included:
+- Researching and understanding the algorithms to implement
+- Implementing the algorithms and adding precise but easy to follow explanations
+- Conducting code reviews of my coworkers' work
+
+I was responsible for the design of the deep Reinforcement Learning notebooks. In particular I worked on the notebooks for [DQN](https://github.com/Data-Science-in-Mechanical-Engineering/RLLBC/blob/main/deep_examples/dqn.ipynb), [DDPG](https://github.com/Data-Science-in-Mechanical-Engineering/RLLBC/blob/main/deep_examples/ddpg.ipynb), [REINFORCE]((https://github.com/Data-Science-in-Mechanical-Engineering/RLLBC/blob/main/deep_examples/reinforce.ipynb)), [A2C](https://github.com/Data-Science-in-Mechanical-Engineering/RLLBC/blob/main/deep_examples/a2c.ipynb), [TD3](https://github.com/Data-Science-in-Mechanical-Engineering/RLLBC/blob/main/deep_examples/td3.ipynb) and [SAC](https://github.com/Data-Science-in-Mechanical-Engineering/RLLBC/blob/main/deep_examples/sac.ipynb).
+
+### Challenges
+The main challenge was to build the notebooks as user-friendly as possible. As the notebooks are read by students that have little to no knowledge in RL, the code had to be very clean and the added explanations on point to not cause confusion. On the same note, we set out to design the notebooks uniformly, all following the same overall structure. This turned out to be a pain during production due to the flat implementation hierarchy. A structural change in one notebook did not automatically carry over but had to be manually applied to the remaining notebooks. To tackle this challenge we had to diligently document every change we made and clearly communicate between team members to not lose the overview.
+
+### Results
+The algorithm library has been successfully published on the [institute's GitHub page](https://github.com/Data-Science-in-Mechanical-Engineering/RLLBC). It is now used for exercises and supplement material for the lecture "Reinforcement Learning and Learning-based Control" taught by the institue every summer term. Each cycle over 100 students enroll in the course.
+
+Here you can see a few excerpts from the DQN notebook:
+![DQN-notebook-e-schedule](img/DQN-notebook-e-schedule.png)
+![DQN-notebook-training-explanation](img/DQN-training-explanation.png)
+
 ---
 ## Multi-player Reversi AI
 ---
