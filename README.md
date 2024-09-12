@@ -1,10 +1,10 @@
 # Portfolio
 This file gives an overview of (published) projects that I have worked on over the years, summarizing the *project idea*, detailing my *involvement*, discussing *key challenges* and *proposed solutions*, and showcasing the *achieved results*. The presented projects are:
-- [Master Thesis: Uncertainty-based Reinforcement Learning](#uncertainty-based-reinforcement-learning)
-- [Bachelor Thesis: Winning Probabilities for Mensch Ärgere Dich Nicht](#winning-probabilities-for-mensch-ärgere-dich-nicht)
-- [Reinforcement Learning Algorithm Library](#reinforcement-learning-algorithm-library)
-- [Classic AI for Multi-Player Reversi](#classic-ai-for-multi-player-reversi)
-- [Reinforcement Learning AI for Kore22 Kaggle Challenge](#reinforcement-learning-ai-for-kore22-kaggle-challenge)
+- Master Thesis: [Uncertainty-based Reinforcement Learning](#uncertainty-based-reinforcement-learning)
+- Bachelor Thesis: [Winning Probabilities for Mensch Ärgere Dich Nicht](#winning-probabilities-for-mensch-ärgere-dich-nicht)
+- Student Assistant: [Reinforcement Learning Algorithm Library](#reinforcement-learning-algorithm-library)
+- Practical Course: [Classic AI for Multi-Player Reversi](#classic-ai-for-multi-player-reversi)
+- Practical Course: [Reinforcement Learning AI for Kore22 Kaggle Challenge](#reinforcement-learning-ai-for-kore22-kaggle-challenge)
 ---
 ## Uncertainty-based Reinforcement Learning
 - **GitHub**: https://github.com/Data-Science-in-Mechanical-Engineering/cheq
@@ -42,7 +42,7 @@ A paper summarizing the methodology and results has been accepted and presented 
 ---
 ## Winning Probabilities for Mensch Ärgere Dich Nicht
 - **GitHub**: https://github.com/limarman/Mensch-Aergere-Dich-Nicht
-- **Techstack**: C++, Slurm, (Website: HTML, CSS, Javascript)
+- **Techstack**: C++, Slurm, (Website: Python, Flask, HTML, CSS, Javascript)
 ### Project Overview
 [Mensch Ärgere Dich Nicht](https://en.wikipedia.org/wiki/Mensch_%C3%A4rgere_Dich_nicht) (MadN) is a famous German board game. This project aimed to compute the (Nash-)optimal playing strategy and the corresponding winning probabilities for every possible position of the 2-player variant of the game through a brute-force value iteration algorithm. This project was part of my Bachelor's Thesis during the summer term 2019 and was supervised by Prof. Peter Rossmanith and Dr. Henri Lotze.
 ### Tasks
@@ -92,6 +92,31 @@ Here you can see a few excerpts from the DQN notebook:
 
 ---
 ## Multi-player Reversi AI
+- **GitHub**: https://github.com/limarman/Reversi-SWP
+- **Techstack**: Java, JUnit
+
+### Project Overview
+I worked on this project within a team of three people as a practical course during my Bachelor studies in the summer term 2018. The goal was to develop a classic AI for a version of the game [Reversi](https://en.wikipedia.org/wiki/Reversi) (a.k.a Othello オセロ). The game version we worked with allowed up to 8 players and included additional rules which drastically increased the search state space. The AI we developed is classic in the sense, that it does not employ any machine learning but consists of a handcrafted evaluation function coupled with a standard tree search algorithm (Minimax/Alpha-Beta) as it was used in [Deep Blue](https://de.wikipedia.org/wiki/Deep_Blue) for example.
+
+### Tasks
+I was involved across all layers of the project including:
+- Designing the overall project structure
+- Designing and implementing efficient datastructures and algorithms to model the game state
+- Implementing the game logic following the rule set specifications
+
+However, my main responsibility was engineering the AI logic. This included:
+- Designing the evaluation function
+- Implementing tree-search algorithms (Minimax, Alpha-Beta) + extras such as iterative deepening and aspiration window.
+### Challenges
+The project's setting was a challenge in itself. In regular time intervals, multiple times during a day, a tournament was hosted that pitted the AIs of all groups against each other. A leaderboard publicly displayed who was the winner and who was the loser at the current time. Furthermore, the all-time-best AI from previous years was also participating in the tournaments, serving as a reminder of the standard to strive for. There was no way we would not aim for the throne during the course, so the challenge became to outsmart the competition by coming up with solutions to calculate faster and evaluate better. This asked for a iterative process of identifying possible weaknesses, thinking of an improvement and testing it during the daily tournaments.
+
+### Results
+Already early in the course our group emerged as the highest-performing group of the year, without any serious peer-competition. By the end of the course we also began to consistently rank in front of the all-time-best AI. In a large scale final tournament of the year we ranked 1st by a small margin.
+
+Sadly, I could not find a screenshot of the final standings of that tournament. Instead I found one from a tournament of this year's (2024) course:
+![Standings-Reversi-AI](img/Reversi-AI-standings-2024.png)
+Phteven (our AI) and The Stig (the all-time-best 2018) are still going at it head-to-head even after 6 years. Looking at the number of disqualifications it looks like both could use an update however.
+
 ---
 ## Kore22 AI
 ---
