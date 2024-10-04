@@ -60,7 +60,7 @@ Apart from that, another big challenge was the scale of the problem. The 2-playe
 ### Results
 The algorithm successfully converged after around 140 compute hours on a 48 core machine with a clock rate of 2.1Ghz, returning the optimal winning probabilities for every possible position. The optimal playing strategy can be easily obtained from the probability table by choosing the successor with the highest winning probability.
 ![Convergence Graph Madn](img/convergence-graph-madn.jpg)
-To make the results accessible to the public, I am currently developing a website that will provide an interactive interface for users to explore the winning probabilities. This is a screenshot of how it looks so far:
+To make the results accessible to the public, I have developed a webpage that provides an interactive interface for users to explore the winning probabilities. The website can be found under [madnsolver.de](https://madnsolver.de) and looks like this:
 
 ![Madn Website](img/madn-website.png)
 
