@@ -42,7 +42,7 @@ A paper summarizing the methodology and results has been accepted and presented 
 ---
 ## Winning Probabilities for Mensch Ärgere Dich Nicht
 - **GitHub**: https://github.com/limarman/Mensch-Aergere-Dich-Nicht
-- **Techstack**: C++, Slurm, (Website: Python, Flask, HTML, CSS, Javascript)
+- **Techstack**: C++, Slurm, (Website: Python, Flask, HTML, CSS, Javascript, AWS)
 ### Project Overview
 [Mensch Ärgere Dich Nicht](https://en.wikipedia.org/wiki/Mensch_%C3%A4rgere_Dich_nicht) (MadN) is a famous German board game. This project aimed to compute the (Nash-)optimal playing strategy and the corresponding winning probabilities for every possible position of the 2-player variant of the game through a brute-force value iteration algorithm. This project was part of my Bachelor's Thesis during the summer term 2019 and was supervised by Prof. Peter Rossmanith and Dr. Henri Lotze.
 ### Tasks
